@@ -1,0 +1,26 @@
+:root {
+  --header-color: #20272f;
+  --main-color: #01bb94;
+  --text-color: #fff;
+}
+
+.footer {
+  background-color: var(--header-color);
+  text-align: center;
+  padding: 10px;
+  color: var(--text-color);
+}
+
+.footer p a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.footer p a:hover {
+  text-decoration: underline;
+}

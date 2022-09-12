@@ -1,0 +1,142 @@
+:root {
+  --header-color: #20272f;
+  --main-color: #01bb94;
+  --text-color: #fff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: var(--header-color);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.hero h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.hero h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.hero p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.hero_img img {
+  width: 500px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media (max-width: 1350px) {
+  .hero_img img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero_img img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero_card {
+    order: 2;
+  }
+  .hero_img img {
+    width: 400px;
+    order: 1;
+    margin-top: 120px;
+  }
+  .btn{
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 530px) {
+  .hero_img img {
+    width: 250px;
+    margin-top: 80px;
+  }
+
+  .hero h2 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero h3 {
+    font-size: 16px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    margin-bottom: 50px;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+}
