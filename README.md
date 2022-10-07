@@ -2,4 +2,4 @@
 
 responsive websites using REACT-JS
 
-- [view the live demo 🚀](https://app-auth-36522.web.app/)
+- [view the live demo 🚀](https://reactjss-portfolio.netlify.app/)
